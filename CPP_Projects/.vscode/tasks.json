@@ -1,0 +1,54 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Make Build Directory",
+            "command": "mkdir",
+            "args": [
+                "-p",
+                "${fileDirname}/.build"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "showReuseMessage": false,
+            }
+        },
+        {
+            "label": "DebugBuild",
+            "dependsOn": "Make Build Directory",
+            "command": "clang++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/.build/${fileBasenameNoExtension}.debug",
+                "-std=c++23",
+                "-Wall",
+                "-glldb",
+                "-DDEBUG",
+                "-fuse-ld=lld"
+            ]
+        },
+        {
+            "label": "ReleaseBuild",
+            "dependsOn": "Make Build Directory",
+            "command": "clang++",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/.build/${fileBasenameNoExtension}",
+                "-std=c++23",
+                "-Wall",
+                "-O2",
+                "-fuse-ld=lld"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ]
+}

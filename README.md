@@ -16,8 +16,8 @@
     + Install 2 extensions:
         + clangd
         + LLDB DAP
-    + Open the folder CCP_Projects
-    + To make a new project, simply add new folder inside CCP_Projects
+    + Open the folder CPP_Projects
+    + To make a new project, simply add new folder inside CPP_Projects
     + Debug Build & Run
         + Open the .cpp file you want to debug on
         + Press F5

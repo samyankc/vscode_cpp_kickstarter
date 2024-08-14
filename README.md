@@ -10,7 +10,7 @@
 
 ## Instruction
 + Install llvm with brew
-    + brew install llvm
+    + ```brew install llvm```
 + Append the content of [this file](.zshrc) to your ~/.zshrc
 + Run VSCode
     + Install 2 extensions:

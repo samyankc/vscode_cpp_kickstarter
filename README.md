@@ -12,6 +12,7 @@
 + Install llvm with brew
     + ```brew install llvm```
 + Append the content of [this file](.zshrc) to your ~/.zshrc
++ Download the whole folder: CPP_Projects
 + Run VSCode
     + Install 2 extensions:
         + clangd

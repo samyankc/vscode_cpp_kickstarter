@@ -1,8 +1,8 @@
-### This quick starter is for macos (aarch64)
+# This quick starter is for macos (aarch64)
 
 ## Requirement
 
-# installed vscode
-# installed llvm by brew
+### installed vscode
+### installed llvm by brew
 
-# Assuming brew binary path is in /opt/homebrew/bin
+### Assuming brew binary path is in /opt/homebrew/bin

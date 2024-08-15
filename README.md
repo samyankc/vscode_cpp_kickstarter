@@ -17,7 +17,7 @@
     + Install 2 extensions:
         + clangd
         + LLDB DAP
-    + Open the folder CPP_Projects
+    + Open CPP_Projects.code-workspace / Open the folder CPP_Projects
     + To make a new project, simply add new folder inside CPP_Projects
     + Debug Build & Run
         + Open the .cpp file you want to debug on
